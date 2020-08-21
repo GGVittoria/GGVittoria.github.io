@@ -1,50 +1,39 @@
 <!DOCTYPE html>
+<!-- CSS Stylesheets with Relative Paths -->
 <html lang="en-us">
 <head>
   <meta charset="UTF-8">
-  <title>Activity 1: Basic HTML Bio</title>
+  <title>CSS Stylesheets with Relative Paths</title>
+
+  <!-- This line is money! It points your HTML to the CSS file. -->
+  <!-- Notice the "relative" pathway? It matches a file inside our current directory's "assets" folder. Open it to see our style rules. -->
+  <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 
 <body>
 
-  <h1>JM Leo</h1>
+  <header>
+    <h1>Student Bio</h1>
+  </header>
 
-  <img src="http://lorempixel.com/output/cats-q-c-200-200-8.jpg" alt="JM Leo">
+  <main class="container">
+    <section id="main-bio">
+      <section id="figure">
+        <h2 id="bio-name">JM Leo</h2>
+        <img id="bio-image" src="http://lorempixel.com/output/cats-q-c-200-200-8.jpg" alt="JM Leo">
+      </section>
+      <p>Leo the Lion! Golfer!</p>
+    </section>
 
-  <p>Leo the Lion.</p>
-  <p>Golfer.</p>
-
-  <ul>
-    <li><strong>Email:</strong> <a href="#">someplace@gmail.com</a></li>
-    <li><strong>Github:</strong> <a href="#">sampleName</a></li>
-    <li><strong>Twitter:</strong> <a href="#">coming soon</a></li>
-  </ul>
-
-  <table>
-    <tr>
-      <th>Books</th>
-      <th>Movies</th>
-      <th>Games</th>
-    </tr>
-    <tr>
-      <td>Into Thin Air</td>
-      <td>Of Mice and Men</td>
-      <td>War and Peace</td>
-    </tr>
-    <tr>
-      <td>It's a Wonderful Life</td>
-      <td>A Few Good Men</td>
-      <td>Grease</td>
-    </tr>
-    <tr>
-      <td>Clue</td>
-      <td>Risk</td>
-      <td>Golf and More Golf</td>
-    </tr>
-  </table>
-
-  <!-- Bonus link to last class page -->
-  <a href="../../../../1/Activities/04-Stu_MyFirst_HTML/Solved/my-first-bonus.html">My First HTML Bonus</a>
+    <aside id="contact-info">
+      <h2>Contact Info</h2>
+      <ul>
+        <li><strong>Email:</strong> <a href="#">someplace@gmail.com</a></li>
+        <li><strong>Github:</strong> <a href="#">sampleName</a></li>
+        <li><strong>Portfolio:</strong> <a href="#">coming soon</a></li>
+      </ul>
+    </aside>
+  </main>
 
 </body>
 
